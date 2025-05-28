@@ -1,3 +1,9 @@
+## 0.7.3
+
+### What's Changed
+
+- Update `package.json`
+
 ## 0.7.2 (2025-04-10)
 
 ### What's New
