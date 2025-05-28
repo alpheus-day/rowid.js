@@ -1,7 +1,6 @@
 import type { RowIDWithConfigResult } from "rowid";
 
 import type { Config } from "#/@types/config";
-import type { PackageJson } from "#/@types/packageJson";
 
 import { Command } from "commander";
 import { RowIDWithConfig } from "rowid";
@@ -9,14 +8,14 @@ import { RowIDWithConfig } from "rowid";
 import { CHAT_LIST, RANDOMNESS_LENGTH } from "#/common";
 import { isNumber } from "#/functions/isNumber";
 import { readConfig } from "#/functions/readConfig";
-import { readPackageJson } from "#/functions/readPackageJson";
+
+import { version } from "../package.json";
 
 (async (): Promise<void> => {
     try {
         // declarations
         const program: Command = new Command();
         const config: Config = await readConfig();
-        const pkj: PackageJson | null = await readPackageJson();
 
         const {
             RowID,
@@ -38,7 +37,7 @@ import { readPackageJson } from "#/functions/readPackageJson";
             .name("rowid")
             .description("RowID, a time-based unique ID solution")
             .version(
-                `v${pkj ? pkj.version : "0.0.0"}`,
+                `v${version}`,
                 "-v, --version",
                 "get the version of RowID CLI",
             )
