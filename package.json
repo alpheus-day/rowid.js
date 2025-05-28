@@ -15,7 +15,7 @@
     },
     "devDependencies": {
         "@apst/biome": "~0.1.0",
-        "@apst/tsconfig": "~0.1.0",
+        "@apst/tsconfig": "~0.1.1",
         "@biomejs/biome": "^1.9.4",
         "@swc/core": "^1.11.29",
         "@types/node": "^18.19.103",
