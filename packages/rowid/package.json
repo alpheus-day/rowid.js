@@ -16,11 +16,11 @@
         "js",
         "javascript"
     ],
-    "homepage": "https://github.com/alpheustangs/rowid.js",
-    "bugs": "https://github.com/alpheustangs/rowid.js/issues",
+    "homepage": "https://github.com/alpheus-day/rowid.js",
+    "bugs": "https://github.com/alpheus-day/rowid.js/issues",
     "repository": {
         "type": "git",
-        "url": "https://github.com/alpheustangs/rowid.js.git",
+        "url": "https://github.com/alpheus-day/rowid.js.git",
         "directory": "packages/rowid"
     },
     "license": "MIT",
