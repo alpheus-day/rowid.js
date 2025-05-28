@@ -12,7 +12,7 @@ importers:
         specifier: ~0.2.0
         version: 0.2.0(@biomejs/biome@1.9.4)
       '@apst/tsconfig':
-        specifier: ~0.1.0
+        specifier: ~0.1.1
         version: 0.1.1(typescript@5.8.3)
       '@biomejs/biome':
         specifier: ^1.9.4
@@ -21,7 +21,7 @@ importers:
         specifier: ^1.11.29
         version: 1.11.29
       '@types/node':
-        specifier: ^18.19.103
+        specifier: ^18.19.104
         version: 18.19.104
       npm-run-all2:
         specifier: ^7.0.2
