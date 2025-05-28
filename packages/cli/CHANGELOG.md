@@ -1,8 +1,9 @@
-## 0.4.5
+## 0.4.5 (2025-05-28)
 
 ### What's Changed
 
 - Update `package.json`
+- Remove unnecessary functions
 
 ## 0.4.4 (2025-04-10)
 

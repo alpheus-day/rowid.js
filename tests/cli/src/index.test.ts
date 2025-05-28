@@ -3,6 +3,8 @@ import * as path from "node:path";
 import { execa } from "execa";
 import { describe, expect, it } from "vitest";
 
+import { version } from "../node_modules/rowid-cli/package.json";
+
 const CLI: string = path.resolve(
     process.cwd(),
     "node_modules",
@@ -14,12 +16,14 @@ describe("RowID CLI tests", (): void => {
     // rowid -v
     it("should show version with -v", async (): Promise<void> => {
         const { stdout } = await execa(CLI, ["-v"]);
-        expect(stdout.startsWith("v")).toBe(true);
+        expect(typeof stdout).toBe("string");
+        expect(stdout).toBe(`v${version}`);
     });
 
     it("should show version with --version", async (): Promise<void> => {
         const { stdout } = await execa(CLI, ["--version"]);
-        expect(stdout.startsWith("v")).toBe(true);
+        expect(typeof stdout).toBe("string");
+        expect(stdout).toBe(`v${version}`);
     });
 
     // rowid
